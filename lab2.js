@@ -15,7 +15,7 @@ To run this file (in the terminal) use: node lab2.js
 // SETUP
 //*********************************************************
 
-// We"re going to use this special assert method again to
+// We're going to use this special assert method again to
 // test our code
 function assert(expression, failureMessage) {
   if (!expression) {
@@ -24,13 +24,13 @@ function assert(expression, failureMessage) {
 }
 
 //*********************************************************
-// PROBLEM 1: What"s in a Name? 20 points.
+// PROBLEM 1: What's in a Name? 20 points.
 //
 // Each of the following three functions (x, y, and z) has
 // an empty body. Look at the asserts for each function to
-// figure out what function is supposed to do. Rename each
-// function to reflect its purpose, implement it, then add
-// two more passing asserts for each one.
+// figure out what the function is supposed to do. Rename
+// each function to reflect its purpose, implement it, then
+// add two more passing assertions for each one.
 //*********************************************************
 
 function x() {
@@ -39,7 +39,7 @@ function x() {
   //TODO: rename this function to match what it does
 }
 
-// TODO: don"t forget to rename the function down here, too
+// TODO: don't forget to rename the function down here, too
 assert(6.28 < x(1) && x(1) < 6.2832, "x(1)");
 assert(12.56 < x(2) && x(2) < 12.5664, "x(2)");
 assert(18.84 < x(3) && x(3) < 18.8496, "x(3)");
@@ -50,7 +50,7 @@ function y() {
   //TODO: rename this function to match what it does
 }
 
-// TODO: don"t forget to rename the function down here, too
+// TODO: don't forget to rename the function down here, too
 assert(y(1, 2, 3) === 1, "y(1, 2, 3)");
 assert(y(4, 5, 3) === 3, "y(4, 5, 3)");
 assert(y(-5, -10, 1) === -10, "y(-5, -10, 1)");
@@ -61,7 +61,7 @@ function z() {
   //TODO: rename this function to match what it does
 }
 
-// TODO: don"t forget to rename the function down here, too
+// TODO: don't forget to rename the function down here, too
 assert(z(1) === 1, "z(1)");
 assert(z(3) === 27, "z(3)");
 assert(z(5) === 125, "z(5)");
@@ -73,8 +73,9 @@ assert(z(5) === 125, "z(5)");
 // filter) to remove all side effects.
 //*********************************************************
 
-// Take two arrays. Return true if they have all the same
-// items. Ordering doesn"t matter. Otherwise, return false.
+// sameItems takes two arrays. It returns true if the arrays
+// contain the same elements. Ordering doesn't matter.
+// Otherwise, sameItems returns false.
 function sameItems(array1, array2) {
   array1.sort();
   array2.sort();
@@ -91,9 +92,9 @@ assert(sameItems([ 1, 2, 3 ], [ 2, 3, 1 ]),
   "sameItems([1,2,3],[2,3,1])");
 assert(!sameItems([], [ 1 ]), "sameItems([],[1])");
 
-// Take an array of strings and a search string. Return an
-// array that has only the strings from array that include
-// the search string
+// filter takes an array of strings and a search string. It
+// returns an array that has only the strings from array
+// that include the search string
 function filter(array, searchString) {
   var startLength = array.length,
     currentString;
@@ -118,7 +119,8 @@ assert(sameItems(kittenWords, filter(catWords, "kitt")), "filter");
 //*********************************************************
 function lastLetterSort(stringArray) {
   function byLastLetter(array) {
-    //TODO: implement me
+    //TODO: implement me. sort the strings in alphabetical
+    // order using their last letter
     // read this: http://www.w3schools.com/jsref/jsref_sort.asp
   }
   stringArray.sort(byLastLetter);
@@ -133,6 +135,8 @@ function sumArray(numberArray) {
 function sumSort(arrayOfArrays) {
   arrayOfArrays.sort(function(item) {
     // TODO: implement me using sumArray
+    //  order the arrays based on the sum of the numbers
+    //  inside each array
   });
 }
 
