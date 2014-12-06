@@ -1,0 +1,15 @@
+{
+  "name": "lab2-adb-track",
+  "version": "0.0.0",
+  "description": "Codefellows Foundations II: Javascript, Lab 2, Beginner Track",
+  "repository" : { "type" : "git", 
+    "url" : "https://github.com/mel-quark/lab2-adv-track.git"
+  },
+  "dependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0"
+  },
+  "devDependencies": {
+    "grunt-jscs": "^0.8.1"
+  }
+}
