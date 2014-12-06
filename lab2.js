@@ -132,7 +132,7 @@ function sumArray(numberArray) {
 
 function sumSort(arrayOfArrays) {
   arrayOfArrays.sort(function(item) {
-    // TODO: implement me
+    // TODO: implement me using sumArray
   });
 }
 
