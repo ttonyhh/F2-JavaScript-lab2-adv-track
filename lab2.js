@@ -1,7 +1,7 @@
 /*********************************************************
 LAB 3: 
 
-Welcome to Lab 3 =)
+Welcome to Lab 2 =)
 
 Be sure to read all the comments!
 
@@ -9,7 +9,7 @@ All of the instructions are inline with the assignment below.
 Look for the word TODO in comments.  Each TODO will have a
 description of what is required.
 
-To run this file (in the terminal) use: node lab3.js
+To run this file (in the terminal) use: node lab2.js
 
 *********************************************************/
 // SETUP
