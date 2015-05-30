@@ -1,27 +1,36 @@
+'use strict';
+
 module.exports = function(grunt) {
 
-  var srcFiles = ["lab2.js"];
+  var srcFiles = ['lab2.js'];
   grunt.initConfig({
     jshint: {
       files: srcFiles,
       options: {
-        sub: true
+        globalstrict: true,
+        quotmark: false,
+        smarttabs: true,
+        trailing: true,
+        undef: true,
+        unused: true,
+        indent: 2,
+        node: true
       }
     },
     jscs: {
       src: srcFiles,
       options: {
-        preset: "jquery",
-        requireDotNotation: null,
-        disallowMultipleVarDecl: null,
-        requireMultipleVarDecl: null
+        preset: 'airbnb',
+        requireMultipleVarDecl: null,
+        validateQuoteMarks: true,
+        disallowMultipleVarDecl: true
       }
     }
   });
 
-  grunt.loadNpmTasks("grunt-contrib-jshint");
-  grunt.loadNpmTasks("grunt-jscs");
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-jscs');
 
-  grunt.registerTask("default", [ "jshint", "jscs"]);
+  grunt.registerTask('default', ['jshint', 'jscs']);
 
 };
