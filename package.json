@@ -1,9 +1,9 @@
 {
-  "name": "lab2-adb-track",
+  "name": "lab2-adv-track",
   "version": "0.0.0",
-  "description": "Codefellows Foundations II: Javascript, Lab 2, Beginner Track",
-  "repository" : { "type" : "git", 
-    "url" : "https://github.com/mel-quark/lab2-adv-track.git"
+  "description": "Codefellows Foundations II: Javascript, Lab 2, Advanced Track",
+  "repository" : { "type" : "git",
+    "url" : "https://github.com/stephanielingwood/lab2-adv-track"
   },
   "dependencies": {
     "grunt-cli": "^0.1.13",
