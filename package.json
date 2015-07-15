@@ -1,9 +1,9 @@
 {
-  "name": "lab2-adv-track",
+  "name": "F2-JavaScript-lab2-adv-track",
   "version": "0.0.0",
   "description": "Codefellows Foundations II: Javascript, Lab 2, Advanced Track",
   "repository" : { "type" : "git",
-    "url" : "https://github.com/stephanielingwood/lab2-adv-track"
+    "url" : "https://github.com/codefellows/F2-JavaScript-lab2-adv-track"
   },
   "dependencies": {
     "grunt-cli": "^0.1.13",
